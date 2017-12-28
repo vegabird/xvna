@@ -1,7 +1,7 @@
 # XVNA
 Extreme Vulnerable Node Application
 
-XVNA is an extreme vulnerable node application coded in Nodejs(Expressjs)/MongoDB that helps security enthusiasts to learn application security. it's not counseled to host this application on-line because it is intended to be Vulnerable. we tend to suggest hosting this application in native setting and sharpening your application security ninja skills with any tools of your own selection. It’s all legal to interrupt or hack into this. the concept is to evangelize application security to the community in probably the best and elementary method. Learn and acquire these skills permanently purpose. however you utilize these skills and content isn't our responsibility.
+XVNA is an extreme vulnerable node application coded in Nodejs(Expressjs)/MongoDB that helps security enthusiasts to learn application security. it's not counseled to host this application online as it is intended to be Vulnerable. We tend to suggest hosting this application in native setting and sharpening your application security skills with any tools of your own selection. It’s all legal to interrupt or hack into this. the concept is to evangelize application security to the community in probably the best and elementary method. Learn and acquire these skills permanently purpose. however you utilize these skills and content isn't our responsibility.
 
 <h1>Warning</h1>
 Extreme Vulnerable Node Application (XVNA) is most vulnerable, don't transfer it to your hosting provider's public folder or any net facing servers, as they'll be compromised. It is recommended to use localhost.
