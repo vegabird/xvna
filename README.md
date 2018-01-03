@@ -27,6 +27,7 @@ We are not resposible for any loss after using this XVNA (Extreme Vulnerable Nod
  </ol>
 </ul>
 <ul>
+  <li>A2:2017-Broken Authentication</li>
   <li>A3:2017-Sensitive Data Exposure</li>
   <ol>
     <li>Sensitive Data</li>
