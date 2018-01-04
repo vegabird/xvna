@@ -40,7 +40,7 @@ We are not resposible for any loss after using this XVNA (Extreme Vulnerable Nod
   <li>A8:2017-Insecure Deserialization</li>
 </ul>
 
+<p>Visit our blog for more https://www.vegabird.com/category/extreme-vulnerable-node-application/ </p>
 
 
-
-<pre>Created by Vegabird Team</pre>
+<pre>Created by <a href="https://www.vegabird.com">Vegabird</a> Team</pre>
