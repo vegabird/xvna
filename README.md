@@ -10,12 +10,12 @@ Extreme Vulnerable Node Application (XVNA) is most vulnerable, don't transfer it
 We are not resposible for any loss after using this XVNA (Extreme Vulnerable Node Application). We are clearing that this is malicious application , we are not responsible for any loss of yours. Installing it in web server may compromise your security and data.
 
 <h1>Setup</h1>
-1. Start mongoDB
-2. Create DB xvna in mongoDB
-3. Import the Collection to mongoDB given from folder collection
-4. Start the xvna from root folder using command: node index.js
-5. We are good to go , hit localhost:3000/app
-6. Login Credential: email-> admin@xvna.com password -> password
+<li>1. Start mongoDB</li>
+<li>2. Create DB xvna in mongoDB</li>
+<li>3. Import the Collection to mongoDB given from folder collection</li>
+<li>4. Start the xvna from root folder using command: node index.js</li>
+<li>5. We are good to go , hit localhost:3000/app</li>
+<li>6. Login Credential: email-> admin@xvna.com password -> password</li>
 
 <h1>List of Vulnerability</h1>
 <ul>
