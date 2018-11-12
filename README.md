@@ -1,4 +1,12 @@
 # XVNA
+
+[![Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/img/badges/Rawsec-inventoried-FF5050_flat.svg)](https://inventory.rawsec.ml/tools.html#XVNA)
+[![GitHub version](https://badge.fury.io/gh/vegabird%2Fxvna.svg)](https://badge.fury.io/gh/vegabird%2Fxvna)
+[![GitHub issues](https://img.shields.io/github/issues/vegabird/xvna.svg)](https://github.com/vegabird/xvna/issues)
+[![GitHub forks](https://img.shields.io/github/forks/vegabird/xvna.svg)](https://github.com/vegabird/xvna/network)
+[![GitHub stars](https://img.shields.io/github/stars/vegabird/xvna.svg)](https://github.com/vegabird/xvna/stargazers)
+[![GitHub license](https://img.shields.io/github/license/vegabird/xvna.svg)](https://github.com/vegabird/xvna)
+
 Extreme Vulnerable Node Application
 
 XVNA is an extreme vulnerable node application coded in Nodejs(Expressjs)/MongoDB that helps security enthusiasts to learn application security. it's not counseled to host this application online as it is intended to be Vulnerable. We tend to suggest hosting this application in native setting and sharpening your application security skills with any tools of your own selection. It’s all legal to interrupt or hack into this. the concept is to evangelize application security to the community in probably the best and elementary method. Learn and acquire these skills permanently purpose. however you utilize these skills and content isn't our responsibility.
