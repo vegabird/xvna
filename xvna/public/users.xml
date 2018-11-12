@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+	<user ID="1">
+		<id>1</id>
+		<login>raj</login>
+		<password>kumar</password>		
+		<role>admin</role>
+		
+	</user>
+	<user ID="2">
+		<id>2</id>
+		<login>mohan</login>
+		<password>raj</password>		
+		<role>guest</role>
+		
+	</user>
+	<user ID="3">
+		<id>3</id>
+		<login>chandra</login>
+		<password>prakash</password>		
+		<role>admin</role>
+		
+	</user>
+	<user ID="4">
+		<id>4</id>
+		<login>suraya</login>
+		<password>prakash</password>		
+		<role>user</role>
+		
+	</user>
+	
+</users>

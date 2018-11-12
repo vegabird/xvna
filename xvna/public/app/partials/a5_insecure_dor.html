@@ -1,0 +1,48 @@
+<div class='content-wrapper' ng-init="app.settings.pagetitle = 'A5:2017-broken access control';" ng-controller="a5_insecure_dor">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <section class="box ">
+            <header class="panel_header">
+                <h2 class="title pull-left">Check Your Account Details</h2>
+                <div class="actions panel_actions pull-right">
+                    <i class="box_toggle material-icons">expand_more</i>
+                    <i class="box_setting material-icons" ng-click="section_modal()">mode_edit</i>
+                    <i class="box_close material-icons">close</i>
+                </div>
+            </header>
+            <div class="content-body padding-bottom-0">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="form-label" for="account_number">Your Account Number is 1001</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <button type="button " class="btn btn-primary" ng-click="check_accountno(1001)">Check</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body padding-bottom-15">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Account Number</th>
+                                    <th>Name</th>
+                                    <th>Account Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">{{alldata.accountno}}</th>
+                                    <td>{{alldata.name}}</td>
+                                    <td>{{alldata.accounttype}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

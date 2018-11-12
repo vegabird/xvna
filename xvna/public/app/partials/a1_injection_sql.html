@@ -1,0 +1,45 @@
+<div class='content-wrapper' ng-init="app.settings.pagetitle = 'A1:2017-Injection';" ng-controller="a1_injection_sql">   
+    <div class="col-lg-12">
+        <section class="box ">
+            <header class="panel_header">
+                <h2 class="title pull-left">NoSQL Injection</h2>
+                <div class="actions panel_actions pull-right">
+                    <i class="box_toggle material-icons">expand_more</i>                    
+                </div>
+            </header>
+            <div class="content-body padding-bottom-15">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <form class="form-inline">
+                            <div class="form-group margin-bottom-15">
+                                <label class="sr-only" for="userid">User ID</label>
+                                <input type="text" ng-model="userid" class="form-control" id="userid" placeholder="Enter User ID">
+                            </div>                                                        
+                            <button type="button" class="btn btn-primary margin-left-15" ng-click="checkUser(userid)">Get Data</button>                           
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>                                    
+                                    <th>Name</th>
+                                    <th>Age</th>                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="success" ng-repeat="data in alldata">
+                                    <th scope="row">{{data.id}}</th>
+                                    <td>{{data.name}}</td>
+                                    <td>{{data.age}}</td>                                    
+                                </tr>                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

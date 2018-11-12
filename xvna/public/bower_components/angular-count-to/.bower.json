@@ -1,0 +1,13 @@
+{
+  "name": "angular-count-to",
+  "homepage": "https://github.com/sparkalow/angular-count-to",
+  "_release": "1ed2155bb5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1ed2155bb5547d03c3d2d0d2bf0db377c5eec96f"
+  },
+  "_source": "git://github.com/sparkalow/angular-count-to.git",
+  "_target": "*",
+  "_originalSource": "angular-count-to"
+}

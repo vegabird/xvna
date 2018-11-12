@@ -1,0 +1,30 @@
+<div class='content-wrapper' ng-init="app.settings.pagetitle = 'A1:2017-Injection';" ng-controller="a1_inj_ctrl">
+    <div class="col-lg-12">
+        <section class="box ">
+            <header class="panel_header">
+                <h2 class="title pull-left">CMD Injection</h2>
+                <div class="actions panel_actions pull-right">
+                    <i class="box_toggle material-icons">expand_more</i>                    
+                </div>
+            </header>
+            <div class="content-body padding-bottom-15">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <form class="form-inline">
+                            <div class="form-group margin-bottom-15">
+                                <label class="sr-only" for="userid">Enter IP Address</label>
+                                <input type="text" ng-model="userid" class="form-control" id="userid" placeholder="IP Address">
+                            </div>                                                        
+                            <button type="button" class="btn btn-primary margin-left-15" ng-click="checkUser(userid)">Check</button>                           
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <pre>{{alldata}}</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

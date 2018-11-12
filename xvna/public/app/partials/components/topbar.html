@@ -1,0 +1,72 @@
+<!-- START TOPBAR -->
+<div class='logo-area'>
+</div>
+<div class='quick-area'>
+    <div class='pull-left slantit'>
+        <ul class="info-menu left-links list-inline list-unstyled">
+            <li class="sidebar-toggle-wrap">
+                <a href data-toggle="sidebar" class="sidebar_toggle">
+                    <i class="material-icons">menu</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="pull-left pagetitle">
+        <span class='line'></span>
+        <h1>{{app.settings.pagetitle}}</h1>
+        <div></div>
+    </div>
+    
+    <div class='pull-right quickright'>
+        <ul class="info-menu right-links list-inline list-unstyled">
+            
+            <li class="dropdown profile tab" uib-dropdown>
+                <a href class="dropdown-toggle toggle" uib-dropdown-toggle>
+                    <img ng-if="app.type == 'general'" src="img/user.png" alt="user-image" class="img-circle img-inline">
+                    <img ng-if="app.type == 'hospital'" src="data/profile/profile-hospital.jpg" alt="user-image" class="img-circle img-inline">
+                    <img ng-if="app.type == 'university'" src="data/profile/profile-university.jpg" alt="user-image" class="img-circle img-inline">
+                    <img ng-if="app.type == 'crm'" src="data/profile/profile-crm.jpg" alt="user-image" class="img-circle img-inline">
+                    <img ng-if="app.type == 'music'" src="data/profile/profile-music.jpg" alt="user-image" class="img-circle img-inline">
+                    <img ng-if="app.type == 'blog'" src="data/profile/profile-blog.jpg" alt="user-image" class="img-circle img-inline">
+                    <img ng-if="app.type == 'socialmedia'" src="data/profile/profile-socialmedia.jpg" alt="user-image" class="img-circle img-inline">
+                     <img ng-if="app.type == 'ecommerce'" src="data/profile/profile-ecommerce.jpg" alt="user-image" class="img-circle img-inline">
+                    <img ng-if="app.type == 'freelancing'" src="data/profile/profile-freelancing.jpg" alt="user-image" class="img-circle img-inline">
+                    <span class="profile-status available"></span>
+                    
+                        <!-- <span class='hidden-sm hidden-md hidden-xs'>John Carter </span>  -->
+                        <!-- <i class="material-icons hidden-md hidden-sm hidden-xs">expand_more</i> -->
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right profile animated fadeIn">
+<!--
+                    <li>
+                        <a ui-sref="app.dashboard">
+                            <i class="material-icons">settings</i> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a ui-sref="app.ui.profile">
+                            <i class="material-icons">person</i> Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a ui-sref="app.ui.faq">
+                            <i class="material-icons">help</i> Help
+                        </a>
+                    </li>
+-->
+                    <li class="last">
+                        <a ui-sref="access.login">
+                            <i class="material-icons">lock</i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- <li class="chat-toggle-wrapper chat-slant">
+                <a href data-toggle="chatbar" class="toggle_chat" ng-click="app.settings.chatFolded = !app.settings.chatFolded; menuChatToggle('chat',app.settings.chatFolded) ">
+                    <i class="material-icons">chat_bubble</i>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+<!-- END TOPBAR -->

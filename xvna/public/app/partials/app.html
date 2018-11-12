@@ -1,0 +1,56 @@
+  <!-- header --> 
+  <div data-ng-include=" 'partials/components/topbar.html' " class="page-topbar {{app.settings.menuFolded ? 'sidebar_shift' : ''}} {{app.settings.chatFolded ? '' : 'chat_shift'}}"> 
+  </div>
+  <!-- / header -->
+
+  
+<!-- START CONTAINER -->
+
+<div class="page-container row-fluid" ui-sectionbox ng-controller="ModalDemoCtrl">
+
+  <!-- leftbar -->
+	 <div ng-if="app.type == 'general'" data-ng-include=" 'partials/components/leftbar.html' " class="page-sidebar {{app.settings.menuFolded ? 'collapseit' : 'expandit'}}  {{app.settings.chatFolded ? '' : 'chat_shift'}}"></div>
+    <div ng-if="app.type == 'hospital'" data-ng-include=" 'partials/components/leftbar.hospital.html' " class="page-sidebar {{app.settings.menuFolded ? 'collapseit' : 'expandit'}}  {{app.settings.chatFolded ? '' : 'chat_shift'}}"></div>
+    <div ng-if="app.type == 'university'" data-ng-include=" 'partials/components/leftbar.university.html' " class="page-sidebar {{app.settings.menuFolded ? 'collapseit' : 'expandit'}}  {{app.settings.chatFolded ? '' : 'chat_shift'}}"></div>
+    <div ng-if="app.type == 'crm'" data-ng-include=" 'partials/components/leftbar.crm.html' " class="page-sidebar {{app.settings.menuFolded ? 'collapseit' : 'expandit'}}  {{app.settings.chatFolded ? '' : 'chat_shift'}}"></div>
+    <div ng-if="app.type == 'music'" data-ng-include=" 'partials/components/leftbar.music.html' " class="page-sidebar {{app.settings.menuFolded ? 'collapseit' : 'expandit'}}  {{app.settings.chatFolded ? '' : 'chat_shift'}}"></div>
+    <div ng-if="app.type == 'blog'" data-ng-include=" 'partials/components/leftbar.blog.html' " class="page-sidebar {{app.settings.menuFolded ? 'collapseit' : 'expandit'}}  {{app.settings.chatFolded ? '' : 'chat_shift'}}"></div>
+    <div ng-if="app.type == 'socialmedia'" data-ng-include=" 'partials/components/leftbar.socialmedia.html' " class="page-sidebar {{app.settings.menuFolded ? 'collapseit' : 'expandit'}}  {{app.settings.chatFolded ? '' : 'chat_shift'}}"></div>
+    <div ng-if="app.type == 'ecommerce'" data-ng-include=" 'partials/components/leftbar.ecommerce.html' " class="page-sidebar {{app.settings.menuFolded ? 'collapseit' : 'expandit'}}  {{app.settings.chatFolded ? '' : 'chat_shift'}}"></div>
+    <div ng-if="app.type == 'freelancing'" data-ng-include=" 'partials/components/leftbar.freelancing.html' " class="page-sidebar {{app.settings.menuFolded ? 'collapseit' : 'expandit'}}  {{app.settings.chatFolded ? '' : 'chat_shift'}}"></div>
+  <!-- / leftbar -->
+
+
+	<!-- START CONTENT -->
+	<section id="main-content" class="{{app.settings.menuFolded ? 'sidebar_shift' : ''}} {{app.settings.chatFolded ? '' : 'chat_shift'}}">
+    <div class="pull-left mobile-pagetitle"><h1>{{app.settings.pagetitle}}</h1></div>
+    <section class="wrapper main-wrapper" style='' ui-view>
+
+    </section>
+    </section>
+    <!-- END CONTENT -->
+
+  <!-- rightsidebar start-->
+  <!--<div data-ng-include=" 'partials/components/rightbar.html' " class="page-chatapi {{app.settings.chatFolded ? 'hideit' : 'showit'}}">
+  </div>-->
+
+	<div class="chatapi-windows {{app.settings.chatFolded ? 'hideit' : 'showit'}}"></div>
+  <!-- rightsidebar end -->
+
+
+  <!-- footer -->
+  <div ng-if="app.type == 'music'" class="app-footer app-footer-fixed {{app.settings.menuFolded ? 'sidebar_shift' : ''}} {{app.settings.chatFolded ? '' : 'chat_shift'}}" data-ng-include=" 'partials/components/music.player.html' ">
+  </div>
+  <!-- / footer -->
+
+    </div>
+    <!-- END CONTAINER -->
+
+
+
+  <!-- footer -->
+  <div data-ng-include=" 'partials/components/footer.html' ">
+  </div>
+  <!-- / footer -->
+
+

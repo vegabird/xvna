@@ -1,0 +1,24 @@
+{ 
+    "_id" : ObjectId("5a2931ac697c1bfbbb540199"), 
+    "name" : "Apple", 
+    "quantity" : 1.0, 
+    "price" : 10.0
+}
+{ 
+    "_id" : ObjectId("5a2932b2697c1bfbbb54019a"), 
+    "name" : "Banana", 
+    "quantity" : 2.0, 
+    "price" : 10.0
+}
+{ 
+    "_id" : ObjectId("5a2932bc697c1bfbbb54019b"), 
+    "name" : "Egg", 
+    "quantity" : 3.0, 
+    "price" : 10.0
+}
+{ 
+    "_id" : ObjectId("5a2932c6697c1bfbbb54019c"), 
+    "name" : "Beans", 
+    "quantity" : 3.0, 
+    "price" : 10.0
+}

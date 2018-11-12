@@ -1,0 +1,60 @@
+{ 
+    "_id" : ObjectId("5a2a458ab59a1012b0b31ade"), 
+    "name" : "Noah", 
+    "accountno" : 1001.0, 
+    "accounttype" : "Savings Accounts"
+}
+{ 
+    "_id" : ObjectId("5a2a4680b59a1012b0b31adf"), 
+    "name" : "Liam", 
+    "accountno" : 1002.0, 
+    "accounttype" : "Brokerage Accounts"
+}
+{ 
+    "_id" : ObjectId("5a2a46d5b59a1012b0b31ae0"), 
+    "name" : "Ava", 
+    "accountno" : 1003.0, 
+    "accounttype" : "Money Market Accounts"
+}
+{ 
+    "_id" : ObjectId("5a2a470bb59a1012b0b31ae1"), 
+    "name" : "Sophia", 
+    "accountno" : 1004.0, 
+    "accounttype" : "Basic Checking Accounts"
+}
+{ 
+    "_id" : ObjectId("5a2a473fb59a1012b0b31ae2"), 
+    "name" : "James", 
+    "accountno" : 1005.0, 
+    "accounttype" : "Savings Accounts"
+}
+{ 
+    "_id" : ObjectId("5a2a47d7b59a1012b0b31ae3"), 
+    "name" : "Benjamin", 
+    "accountno" : 1006.0, 
+    "accounttype" : "Interest Bearing Checking Accounts"
+}
+{ 
+    "_id" : ObjectId("5a2a4803b59a1012b0b31ae4"), 
+    "name" : "Emily", 
+    "accountno" : 1007.0, 
+    "accounttype" : "CD’s"
+}
+{ 
+    "_id" : ObjectId("5a2a4832b59a1012b0b31ae5"), 
+    "name" : "Jacob", 
+    "accountno" : 1008.0, 
+    "accounttype" : "investment retirement accounts"
+}
+{ 
+    "_id" : ObjectId("5a2a4868b59a1012b0b31ae6"), 
+    "name" : "Isabella", 
+    "accountno" : 1009.0, 
+    "accounttype" : "Brokerage Accounts"
+}
+{ 
+    "_id" : ObjectId("5a2a48d5b59a1012b0b31ae7"), 
+    "name" : "Ethan", 
+    "accountno" : 1010.0, 
+    "accounttype" : "Money Market Accounts"
+}

@@ -1,0 +1,26 @@
+<div class='content-wrapper' ng-init="app.settings.pagetitle = 'A7 Access Controls';" ng-controller="a7_accessctrls_ctrl">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <section class="box ">
+            <header class="panel_header">
+                <h2 class="title pull-left">Basic Profile Fields</h2>
+                <div class="actions panel_actions pull-right">
+                    <i class="box_toggle material-icons">expand_more</i>
+                    <i class="box_setting material-icons" ng-click="section_modal()">mode_edit</i>
+                    <i class="box_close material-icons">close</i>
+                </div>
+            </header>
+            <div class="content-body padding-bottom-0">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+                        <div class="form-group">
+                            <label class="form-label" for="field-2">A7 Access Controls</label>
+                            <div class="controls">
+                                <input type="text" name="masked" ui-mask="(999) 999-9999" class="form-control" ng-model="mask1" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+{
+	"name": "angular-inview",
+	"version": "1.5.7",
+	"main": "./angular-inview.js",
+	"dependencies": {
+		"angular": "~1"
+	},
+	"devDependencies": {
+		"jquery": "~2.1.1",
+		"angular-mocks": "~1"
+	},
+	"readmeFilename": "README.md",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/thenikso/angular-inview.git"
+	}
+}
