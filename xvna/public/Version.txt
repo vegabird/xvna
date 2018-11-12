@@ -1,0 +1,135 @@
+Version 4.2.0 - 06th September 2017
+UPDATE: User Profile page image dimensions updated for better clarity
+UPDATE: Improved alert minimal styling
+UPDATE: Improved CSS
+UPDATE: Regenerated Angular Folder for the above changes
+
+Version 4.1 - 16th May 2017
+UPDATE: Angular updated from v1.5.5 to v1.6.4
+UPDATE: Angular Animate updated from v1.5.5 to v1.6.4
+UPDATE: Angular Cookies updated from v1.5.5 to v1.6.4
+UPDATE: Angular Resource updated from v1.5.5 to v1.6.4
+UPDATE: Angular Sanitize updated from v1.5.5 to v1.6.4
+UPDATE: Angular Touch updated from v1.5.5 to v1.6.4
+UPDATE: Angular Ui Router updated from v0.2.18 to v0.4.2
+UPDATE: Improved CSS
+UPDATE: Replaced .success to .then in $http.get request as per angular 1.6.x
+UPDATE: Regenerated Angular Application folder
+
+Version 4.0.1 - 25th October 2016
+
+UPDATE: Bootstrap updated from v3.3.7
+
+Version 4.0.0 - 4th May 2016
+
+UPDATE: Angular updated from v1.4.8 to v1.5.5
+UPDATE: Angular Animate updated from v1.4.8 to v1.5.5
+UPDATE: Angular Cookies updated from v1.4.8 to v1.5.5
+UPDATE: Angular Resource updated from v1.4.8 to v1.5.5
+UPDATE: Angular Sanitize updated from v1.4.8 to v1.5.5
+UPDATE: Angular Touch updated from v1.4.8 to v1.5.5
+UPDATE: Angular Bootstrap updated from v0.14.3 to v1.3.2
+UPDATE: Angular Bootstrap Colorpicker updated from v3.0.19 to v3.0.25
+UPDATE: Angular Inview updated from v1.5.6 to v1.5.7
+UPDATE: Angular Loading Bar updated from v0.8.0 to v0.9.0
+UPDATE: Angular Smart Table updated from v2.1.5 to v2.1.8
+UPDATE: Angular UI Grid updated from v3.0.7 to v3.1.1
+UPDATE: Angular UI Router updated from v0.2.15 to v0.2.18
+UPDATE: Angular Xeditable updated from v0.1.9 to v0.1.12
+UPDATE: Animate.css updated from v3.4.0 to v3.5.1
+UPDATE: Bootstrap daterangepicker updated from v2.1.13 to v2.1.19
+UPDATE: Bootstrap tagsinput updated from v0.7.1 to v0.8.0
+UPDATE: Bootstrap touchspin updated from v3.0.3 to v3.1.1
+UPDATE: Font-Awesome updated from v4.5.0 to v4.6.1
+UPDATE: jQuery updated from v2.1.4 to v2.2.3
+UPDATE: Documentation updated to 4.0.0
+
+
+Version 3.0.0 - 5th December 2015
+
+ADDED: Multipurpose Admin Theme support
+ADDED: Hospital Admin Theme
+ADDED: University Admin Theme
+ADDED: Music Admin Theme
+ADDED: CRM Admin Theme
+ADDED: Freelancing Admin Theme
+ADDED: Ecommerce Admin Theme
+ADDED: Blog Admin Theme
+ADDED: Social Media Admin Theme
+ADDED: Videogular AngularJS library to use as audio player and video player
+ADDED: 8 New CSS Skins (used in all different industry based admin panel demos)
+UPDATE: Mobile Menu Fixed
+UPDATE: Improved CSS throughout the APP.
+
+Version 2.0.0 - 25th November 2015
+
+UPDATE: Angular updated from v1.3.11 to v1.4.8
+UPDATE: Angular Animate updated from v1.3.11 to v1.4.8
+UPDATE: angular Cookies updated from v1.3.11 to v1.4.8
+UPDATE: angular Resource updated from v1.3.11 to v1.4.8
+UPDATE: angular Sanitize updated from v1.3.11 to v1.4.8
+UPDATE: angular Touch updated from v1.3.11 to v1.4.8
+UPDATE: Angular Bootstrap updated from v0.12.0 to 0.14.3
+UPDATE: Progress directive updated from "progressbar" to "uib-progressbar"
+UPDATE: bar in Progress Bar directive updated from "bar" to "uib-bar"
+UPDATE: Dropdown Directive updated from "dropdown" to "uib-dropdown"
+UPDATE: Dropdown Directive updated from "dropdown-toggle" to "uib-dropdown-toggle"
+UPDATE: Dropdown Directive updated from "dropdown" to "uib-dropdown"
+UPDATE: Tooltip Directive updated from "tooltip" to "uib-tooltip"
+UPDATE: Popover Directive updated from "popover" to "uib-popover"
+UPDATE: Typeahead Directive updated from "typeahead" to "uib-typeahead"
+UPDATE: Date Picker Directive updated from "datepicker-popup" to "uib-datepicker-popup"
+UPDATE: Date Picker Directive updated from "datepicker" to "uib-datepicker"
+UPDATE: Time Picker Directive updated from "timepicker" to "uib-timepicker"
+UPDATE: Rating Directive updated from "rating" to "uib-rating"
+UPDATE: Modal Directive updated from "modal" to "uib-modal"
+UPDATE: Button Directive updated from "button-checkbox" to "uib-button-checkbox"
+UPDATE: Button Directive updated from "button-radio" to "uib-button-radio"
+UPDATE: Alert Directive updated from "alert" to "uib-alert"
+UPDATE: Carousel Directive updated from "carousel" to "uib-carousel"
+UPDATE: Carousel Directive updated from "slide" to "uib-slide"
+UPDATE: Pagination Directive updated from "pagination" to "uib-pagination"
+UPDATE: Pagination Directive updated from "pager" to "uib-pager"
+UPDATE: Accordion Directive updated from "accordion" to "uib-accordion" 
+UPDATE: Accordion Directive updated from "accordion-heading" to "uib-accordion-heading"
+UPDATE: Accordion Directive updated from "accordion-group" to "uib-accordion-group"
+UPDATE: Tab Directive updated from "tab" to "uib-tab"
+UPDATE: Tab Directive updated from "tab-heading" to "uib-tab-heading"
+UPDATE: Tab Directive updated from "tabset" to "uib-tabset"
+UPDATE: Collapse Directive updated from "collapse" to "uib-collapse"
+UPDATE: Angular Bootstrap Colorpicker updated from v3.0.18 to v3.0.19
+UPDATE: Angular Chart.js updated from v0.7.1 to v0.8.6 
+UPDATE: Angular Chart.js made compatible with Chart.js v1.0.2
+UPDATE: Angular File Upload updated from v1.1.1 to v2.2.0
+UPDATE: Angular Inview updated from v1.5.0 to v1.5.6
+UPDATE: Angular Loading Bar updated from v0.7.1 to v0.8.0
+UPDATE: Angular Smart Table updated from v1.4.9 to v2.1.5
+UPDATE: Angular UI Calendar updated from v1.0.0 to v1.0.1
+UPDATE: Fullcalendar updated from v2.2.1 to v2.3.1
+UPDATE: jQuery Knob updated from v1.2.11 to v1.2.12
+UPDATE: Angular UI Grid updated from v3.0.0-rc.16 to v3.0.7
+UPDATE: Angular UI Router updated from v0.2.11 to v0.2.15
+UPDATE: Angular Xeditable updated from v0.1.8 to v0.1.9
+UPDATE: Animate.css updated from v3.2.0 to v3.4.0
+UPDATE: Bootstrap updated from v3.3.0 to v3.3.5
+UPDATE: Bootstrap Chosen updated v1.0.0 to v1.0.1
+UPDATE: Bootstrap date-range picker updated from v1.3.17 to v2.1.13
+UPDATE: Bootstrap Tagsinput updated from v0.4.2 to v0.7.1
+UPDATE: Bootstrap Touchspin updated from v3.0.1 to v3.0.3
+UPDATE: Chosen updated from v1.3.0 to v1.4.2
+UPDATE: Datatables updated from v1.10.4 to v1.10.10
+UPDATE: Font Awesome updated from v4.2.0 to v4.5.0
+UPDATE: NgImgCrop updated from v0.2.0 to v0.3.2
+UPDATE: NgMorris updated from v0.0.1 to v0.0.2
+UPDATE: NgStorage updated from v0.3.0 to v0.3.10
+UPDATE: OcLazyLoad updated from v1.0.1 to v1.0.8
+UPDATE: Datatables plugins upated from v1.0.1 to v1.10.10
+UPDATE: Improved LockScreen Page and updated Font Icons
+UPDATE: Date format added in moment.js fromNow filter to avoid future deprecation
+UPADATE: Mail API dates updated in JSON file
+UPDATE: Plugin versions in bower.json file updated
+UPDATE: Minor typo fix in readme.txt file
+UPDATE: Font Awesome Icons Display in User Interface Icons
+ADDED: Generated Angular folder using grunt build:angular command added in the package
+
+Version 1.0 - 11th August 15

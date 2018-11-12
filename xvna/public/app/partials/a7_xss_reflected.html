@@ -1,0 +1,60 @@
+<div class='content-wrapper' ng-init="app.settings.pagetitle = 'A3 XSS';" ng-controller="a3_xss_reflected">
+    <div class="col-lg-12">
+        <section class="box ">
+            <header class="panel_header">
+                <h2 class="title pull-left">reflected xss</h2>
+                <div class="actions panel_actions pull-right">
+                    <i class="box_toggle material-icons">expand_more</i>                    
+                </div>
+            </header>
+            <div class="content-body padding-bottom-15">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12">                        
+                            <div class="form-group">
+                                <label class="form-label" for="standardonJoin">Check Price</label>
+
+                                <div class="controls">
+                                    <select class="form-control" name="userid" id="standardonJoin" ng-model="userid">
+                                        <option value="">Select</option>
+                                        <option value="Apple">Apple</option>
+      <option value="Banana">Banana</option>
+      <option value="Egg">Egg</option>
+                                    <option value="Beans">Beans</option>
+                                    </select>
+                                   
+                                </div>
+                            </div>
+                                                                                  
+                            <button type="button" class="btn btn-primary margin-left-15" ng-click="checkUser(userid)">Check</button>                           
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">                        
+                        You have Searched For <span ng-bind-html="trustedMessage"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>                                    
+                                    <th>Quantity</th>
+                                    <th>Price</th>                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="success" ng-repeat="data in alldata">
+                                    <th scope="row">{{data.name}}</th>
+                                    <td>{{data.quantity}}</td>
+                                    <td>{{data.price}}</td>                                    
+                                </tr>                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+    <head>
+        <meta charset="utf-8">
+        <title>AngularJS ui-mask</title>
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+
+        <!-- ui-mask files -->
+        <script src="../dist/mask.js"></script>
+    </head>
+
+    <body class="container">
+
+        <script>
+            var app = angular.module('demo', ['ui.mask']);
+        </script>
+        <section id="mask">
+            <div class="page-header">
+                <h1>Mask</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>What?</h3>
+
+                    <p>Apply a mask on an input field so the user can only type pre-determined pattern.</p>
+                    <form name="demo" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-3" for="masked">Masked Input:</label>
+
+                            <div class="col-sm-9" ng-init="vm = {}">
+                                <input ng-if="!remove" class="form-control" id="masked" name="masked" ui-mask="{{y}}" ui-options="{{options | json}}" model-view-value="{{modelViewValue}}" ng-model="vm.x" placeholder="Write a mask or click a button" ui-mask-placeholder ui-mask-placeholder-char="{{z}}"/>
+                                <span class="help-inline">
+                                    <div ng-show="vm.x.length">Model value: <code>{{vm.x}}</code></div>
+                                    <div ng-hide="vm.x.length">Model value: <code>undefined</code></div>
+                                    <div ng-show="demo.masked.$viewValue.length">NgModelController.$viewValue: <code>{{demo.masked.$viewValue}}</code></div>
+                                    <div ng-hide="demo.masked.$viewValue.length">NgModelController.$viewValue: <code>undefined</code></div>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3" for="definition">Mask Definition:</label>
+
+                            <div class="col-sm-9">
+                                <input class="form-control" id="definition" ng-model="y" style="vertical-align: top;">
+                                <span class="help-inline">
+                                    <code>A</code> Any letter.<br>
+                                    <code>9</code> Any number.<br>
+                                    <code>*</code> Any letter or number.<br>
+                                    <code>?</code> Make any part of the mask optional.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3" for="placeholder-char">Default placeholder char:</label>
+
+                            <div class="col-sm-9">
+                                <input class="form-control" id="placeholder-char" ng-model="z" style="vertical-align: top; width: 10em;" maxlength="5">
+                                <span class="help-inline">
+                                    You can use any single char, or exactly <code>space</code> to use space symbol.
+                                    The default value if nothing is specified is: <code>_</code>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3">Predefined masks:</label>
+
+                            <div class="col-sm-9">
+                                <p>
+                                    <button class="btn btn-default" ng-click="y = undefined; z=''">Set to undefined (uninitialize)</button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-default" ng-click="y = '(999) 999-9999';z=''">Set to (999) 999-9999</button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-default" ng-click="y = '(999) 999-9999 ext. 999';z=''">Set to (999) 999-9999 ext. 999</button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-default" ng-click="y = '(999) 999-9999 ext. ?9?9?9';z=''">Set to (999) 999-9999 ext. ?9?9?9</button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-default" ng-click="y = '(?9?9?9) ?9?9?9-?9?9?9?9'">Set to (999) 999-9999 (no validation)</button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-default" ng-click="y = '(999) 999-9999 ext. 999'">Set to (999) 999-9999 ext. 999</button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-default" ng-click="y = '(**: AAA-999)';z=''">Set to (**: AAA-999)</button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-default" ng-click="y = '9999 9999 9999 9999';z='space'">Set to 9999 9999 9999 9999 (with space chars as placeholders)</button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-default" ng-click="y = 'AA-9999';z='*'">Set to AA-9999 (with asterisks chars as placeholders)</button>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-3" for="modelViewValue">Model View Value:</label>
+
+                            <div class="col-sm-9">
+                                <input type="checkbox" id="modelViewValue" ng-model="modelViewValue" style="vertical-align: top;">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-3">Re-initialize:</label>
+
+                            <div class="col-sm-9">
+                                <div>Use the following checkbox to reinitialize the ui-mask by removing and adding the target element from the DOM.  Helps with testing different ui-options</div>
+                                <input type="checkbox" ng-model="remove" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" ng-init="e.input = e.keyup = e.click = e.focus = true;">
+                            <label class="col-sm-3">Events to handle:</label>
+
+                            <div class="col-sm-9">
+                                <span class="col-sm-3">input</span><input type="checkbox" id="input" ng-model="e.input" ng-click="options = {eventsToHandle: [e.input ? 'input' : null, e.keyup ? 'keyup' : null, e.click ? 'click' : null, e.focus ? 'focus' : null]}" style="vertical-align: top;"><br>
+                                <span class="col-sm-3">keyup</span><input type="checkbox" id="keyup" ng-model="e.keyup" ng-click="options = {eventsToHandle: [e.input ? 'input' : null, e.keyup ? 'keyup' : null, e.click ? 'click' : null, e.focus ? 'focus' : null]}" style="vertical-align: top;"><br>
+                                <span class="col-sm-3">click</span><input type="checkbox" id="click" ng-model="e.click" ng-click="options = {eventsToHandle: [e.input ? 'input' : null, e.keyup ? 'keyup' : null, e.click ? 'click' : null, e.focus ? 'focus' : null]}" style="vertical-align: top;"><br>
+                                <span class="col-sm-3">focus</span><input type="checkbox" id="focus" ng-model="e.focus" ng-click="options = {eventsToHandle: [e.input ? 'input' : null, e.keyup ? 'keyup' : null, e.click ? 'click' : null, e.focus ? 'focus' : null]}" style="vertical-align: top;"><br>
+                                <span class="col-sm-3">ui-options</span><span>{{options | json}}</span>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-md-6">
+                    <h3>How?</h3>
+                    <pre class="prettyprint">&lt;input type=&quot;text&quot; ng-model=&quot;phonenumber&quot; ui-mask=&quot;(999) 999-9999&quot;  ui-mask-placeholder ui-mask-placeholder-char="_"/&gt;</pre>
+                    <p>Replace &quot;(999) 999-9999&quot; with your desired mask.</p>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

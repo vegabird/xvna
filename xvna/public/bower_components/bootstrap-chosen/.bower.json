@@ -1,0 +1,34 @@
+{
+  "name": "bootstrap-chosen",
+  "version": "1.0.1",
+  "homepage": "https://github.com/alxlit/bootstrap-chosen",
+  "authors": [
+    "alxlit <alxlit+github@alxlit.name>"
+  ],
+  "description": "An alternate stylesheet for Chosen (http://harvesthq.github.com/chosen/).",
+  "keywords": [
+    "bootstrap",
+    "chosen"
+  ],
+  "license": "MIT",
+  "main": [
+    "bootstrap-chosen-variables.less",
+    "bootstrap-chosen-variables.scss",
+    "bootstrap-chosen.less",
+    "bootstrap-chosen.scss",
+    "chosen-sprite.png",
+    "chosen-sprite@2x.png"
+  ],
+  "ignore": [
+    "example.*"
+  ],
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "cf483567783f5d03401b4e3a75ebe46cbee15f24"
+  },
+  "_source": "git://github.com/alxlit/bootstrap-chosen.git",
+  "_target": "~1.0.1",
+  "_originalSource": "bootstrap-chosen"
+}

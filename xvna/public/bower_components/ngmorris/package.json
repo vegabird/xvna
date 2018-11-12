@@ -1,0 +1,32 @@
+{
+  "name": "ng-morris",
+  "version": "0.0.1",
+  "description": "angularjs directives for adding bar, line and donut charts using morrisjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonshark/ngMorris"
+  },
+  "keywords": [
+    "angularjs",
+    "morrisjs",
+    "graph",
+    "chart",
+    "data visualization"
+  ],
+  "author": "Connor Leech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonshark/ngMorris/issues"
+  },
+  "homepage": "https://github.com/jasonshark/ngMorris",
+  "devDependencies": {
+    "event-stream": "^3.1.7",
+    "gulp": "^3.8.6",
+    "gulp-connect": "^2.0.6",
+    "gulp-inject": "^1.0.1",
+    "main-bower-files": "^1.0.2"
+  }
+}

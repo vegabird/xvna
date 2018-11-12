@@ -1,0 +1,14 @@
+{ 
+    "_id" : ObjectId("5a2794583a5bdcee61606353"), 
+    "name" : "admin", 
+    "password" : "password", 
+    "age" : 21.0, 
+    "id" : 1.0
+}
+{ 
+    "_id" : ObjectId("5a2794953a5bdcee61606354"), 
+    "name" : "guest", 
+    "password" : "password", 
+    "age" : 25.0, 
+    "id" : 2.0
+}

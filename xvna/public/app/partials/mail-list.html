@@ -1,0 +1,41 @@
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="pull-left">
+        <div class="btn-group mail_more_btn" uib-dropdown>
+            <button type="button" class="btn btn-secondary">Filter</button>
+            <button type="button" class="btn btn-secondary dropdown-toggle" uib-dropdown-toggle>
+                <span class="caret"></span>
+                <span class="sr-only">Filter</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a ui-sref="app.mail.list({fold:''})">All</a></li>
+                <li><a ui-sref="app.mail.list({fold:'unread'})">Unread</a></li>
+                <li><a ui-sref="app.mail.list({fold:'starred'})">Starred</a></li>
+            </ul>
+        </div>
+    </div>
+    <nav class='pull-right'>
+        <ul class="pager mail_nav">
+            <li><a href="#"><i class='material-icons icon-secondary'>keyboard_arrow_left</i></a></li>
+            <li><a href="#"><i class='material-icons icon-secondary'>keyboard_arrow_right</i></a></li>
+        </ul>
+    </nav>
+    <!-- <span class='pull-right mail_count_nav text-muted'><strong>1</strong> to <strong>20</strong> of 3247</span> -->
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 mail_list" ng-controller="MailListCtrl">
+    <table class="table table-hover">
+        <tr class="{{mail.state}}" ng-repeat="mail in mails | filter:fold" id="mail_msg_{{mail.id}}">
+            <td class='brief'>
+            <img ng-src="{{mail.from.img}}">
+            <a class='mailmsgfrom' ui-sref="app.ui.profile">{{mail.from.name}}</a><br>
+            <a class="msgtext" ui-sref="app.mail.view({mailId:mail.id})">{{mail.subject}}</a>
+
+            <span class="pull-right label label-{{labelClass(mail.label)}} ">{{mail.label}}</span>
+            </td>
+            <td class='fromnow'>
+
+                <div class="star pull-right"><i class="material-icons icon-sm icon-default" ng-class="">{{mail.fold === 'starred' ? 'star': 'star_border'}}</i></div>
+
+            <span class="msg_time">{{mail.date | fromNow}}</span></td>
+        </tr>
+    </table>
+</div>

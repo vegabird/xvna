@@ -1,0 +1,6 @@
+<!-- General section box modal start -->
+<!-- modal end -->
+<!-- <div class="screen-type visible-xs">xs</div>
+<div class="screen-type visible-sm">sm</div>
+<div class="screen-type visible-md">md</div>
+<div class="screen-type visible-lg">lg</div> -->
